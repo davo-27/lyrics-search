@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif
+}
+
+
+body {
+    padding: 1em;
+}
+
+.lyrics-input,
+.loading {
+    text-align: center;
+}
+
+.lyrics-input,
+.lyrics-output {
+    margin: 1em auto;
+    padding: 2em 1.5em;
+    border-radius: 0.8em;
+    background: #fff;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    max-width: 30em;
+}
+
+.lyrics-input h1 {
+    margin: 0em 0 1em 0;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.8em;
+}
+
+.input-wrap input{
+    width: 100%;
+    border: none;
+    margin-left: 0.5em;
+    font-size: 0.9em;   
+}
+
+.input-wrap input:focus{
+    outline: none;   
+}
+
+.fetchBtn{
+    background: #1797ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.fetchBtn:hover{
+    background: #1683db;
+}
+
+
+.lyrics-output,
+.loading{
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.lyrics-output pre{
+    font-size: 10px;
+    font-weight: 500;
+    text-align: start;
+
+}
+
+@media (min-width: 768px) {
+
+    .lyrics-output pre{
+        font-size: 10px;
+        font-weight: 500;
+        text-align: justify;
+    
+    }
+}
+
+.lyrics-output{
+    margin: 1em auto;
+    padding: 2em 0.5em;
+    border-radius: 0.8em;
+    background: #fff;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    max-width: 35em;
+}
+
+
+

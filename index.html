@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>music player</title>
+</head>
+
+<body>
+    <div class="lyrics-input">
+        <h1>Get Song lyrics</h1>
+        <div class="input-wrapper">
+            <div class="input-wrap">
+                <i class='bx bxs-user'></i>
+                <input type="text" name="" id="artistName" placeholder="Artist name...">
+            </div>
+            <div class="input-wrap">
+                <i class='bx bxs-music'></i>
+                <input type="text" name="" id="songName" placeholder="Song name...">
+            </div>
+        </div>
+        <button type="button" class="fetchBtn">Get Lyrics</button>
+    </div>
+    <div class="loading">
+        <p>Fetching Lyrics...</p>
+    </div>
+    <div class="lyrics-output">
+        <pre></pre>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
